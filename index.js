@@ -13,9 +13,7 @@ const route = require("./routes/routes");
 app.use("/api", route);
 
 app.get("/", (req,res)=>{
-    console.log("main route handler hu");
-    console.log(req.body);
-    res.send("hello world my name is arpit singh");
+    res.send("hello world i am here");
 })
 
 app.listen(port,()=>{
