@@ -18,7 +18,7 @@ const auth = function(req,res,next) {
 }
 
 const isStudent = function(req,res,next){
-    console.log("this is isStudent middleware");
+    console.log("this is isStudent middleware and you are in good location");
     if(req.user.role === "student"){
         next();
     }
